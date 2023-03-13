@@ -8,5 +8,7 @@ import (
 func main() {
 	//初始化Viper
 	global.CONST_VP = core.Viper()
+	//初始化zap日志库
+	global.CONST_LOG = core.Zap()
 	core.RunWindowsServer()
 }

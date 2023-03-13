@@ -19,7 +19,7 @@ type Server struct {
 	Os   Os   `json:"os"`
 	Cpu  Cpu  `json:"cpu"`
 	Ram  Ram  `json:"ram"`
-	Disk Disk `josn: "disk"`
+	Disk Disk `json: "disk"`
 }
 
 type Os struct {

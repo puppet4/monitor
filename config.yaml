@@ -24,3 +24,15 @@ system:
   iplimit-time: 3600
   #  路由全局前缀
   router-prefix: ""
+
+
+# zap logger configuration
+zap:
+  level: info
+  format: console
+  prefix: "[github.com/puppet4/monitor]"
+  director: log
+  show-line: true
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  log-in-console: true

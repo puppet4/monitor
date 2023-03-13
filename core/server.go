@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"github.com/puppet4/monitor/global"
 	"github.com/puppet4/monitor/initialize"
+	"go.uber.org/zap"
+	"time"
 )
 
 type Server interface {
@@ -24,8 +26,8 @@ func RunWindowsServer() {
 
 	// 保证文本顺序输出
 	// In order to ensure that the text order output can be deleted
-	//time.Sleep(10 * time.Microsecond)
-	//global.GVA_LOG.Info("server run success on ", zap.String("address", address))
+	time.Sleep(10 * time.Microsecond)
+	global.CONST_LOG.Info("server run success on ", zap.String("address", address))
 
 	s.ListenAndServe().Error()
 }
